@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-rest-data',
-  templateUrl: './rest-data.component.html',
-  styleUrls: ['./rest-data.component.scss']
+  selector: 'app-data',
+  templateUrl: './data.component.html',
+  styleUrls: ['./data.component.scss']
 })
-export class RestDataComponent implements OnInit {
+export class DataComponent implements OnInit {
 
   constructor(private httpClient: HttpClient) { }
 
@@ -23,5 +23,4 @@ export class RestDataComponent implements OnInit {
       this.users = data;
     }); 
   }
-
 }
